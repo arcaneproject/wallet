@@ -84,7 +84,7 @@ export function parseIACUrl(url: string | string[], parameter: string): string[]
   return result.filter((el: string) => el !== '')
 }
 
-export function serializedDataToUrlString(data: string | string[], host: string = 'airgap-vault://', parameter: string = 'd'): string {
+export function serializedDataToUrlString(data: string | string[], host: string = 'bobo-vault://', parameter: string = 'd'): string {
   return `${host}?${parameter}=${Array.isArray(data) ? data.join(',') : data}`
 }
 

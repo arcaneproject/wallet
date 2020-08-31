@@ -1,39 +1,37 @@
 {
   "project_info": {
-    "project_number": "214244309595",
-    "firebase_url": "https://airgap-wallet.firebaseio.com",
-    "project_id": "airgap-wallet",
-    "storage_bucket": "airgap-wallet.appspot.com"
+    "project_number": "514450330676",
+    "firebase_url": "https://bobo-wallet.firebaseio.com",
+    "project_id": "bobo-wallet",
+    "storage_bucket": "bobo-wallet.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:214244309595:android:a63700f158ed0afa",
+        "mobilesdk_app_id": "1:514450330676:android:54b0fc34ec88f3b2fe6661",
         "android_client_info": {
-          "package_name": "it.airgap.wallet"
+          "package_name": "bobo.wallet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "214244309595-6kqbgta1armnou1vcbgla60nvkk51m9v.apps.googleusercontent.com",
+          "client_id": "514450330676-rv761jquki444odqpjkgfe5bc2bs2h22.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB9D7mR0L5HTuX-2vTTnVwKHkefcvpjt04"
+          "current_key": "AIzaSyBW2Em8XSm-_5xDSwCkWK_5gpQyi8A6yEQ"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514450330676-rv761jquki444odqpjkgfe5bc2bs2h22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

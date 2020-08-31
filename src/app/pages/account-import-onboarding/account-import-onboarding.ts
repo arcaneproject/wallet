@@ -6,7 +6,7 @@ import { getProtocolByIdentifier, ICoinProtocol } from '@bobo-wallet/coin-lib'
 import { DeepLinkProvider } from '../../services/deep-link/deep-link'
 import { ErrorCategory, handleErrorSentry } from '../../services/sentry-error-handler/sentry-error-handler'
 
-const DEEPLINK_VAULT_ADD_ACCOUNT: string = `airgap-vault://add-account/`
+const DEEPLINK_VAULT_ADD_ACCOUNT: string = `bobo-vault://add-account/`
 
 @Component({
   selector: 'page-account-import-onboarding',
