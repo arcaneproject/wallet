@@ -1,8 +1,8 @@
 {
-  "name": "airgap-wallet",
+  "name": "bobo-wallet",
   "version": "0.0.1",
-  "author": "Papers GmbH <contact@papers.ch> (https://papers.ch)",
-  "homepage": "https://www.airgap.it",
+  "author": "Hypermine <connect@hypermine.in> (https://hypermine.in)",
+  "homepage": "https://www.hypermine.in/bobo",
   "private": true,
   "scripts": {
     "ng": "ng",
@@ -55,7 +55,7 @@
     "@angular/platform-browser": "^9.1.2",
     "@angular/platform-browser-dynamic": "^9.1.2",
     "@angular/router": "^9.1.2",
-    "@bobo-wallet/coin-lib": "^0.1.1",
+    "@bobo-wallet/coin-lib": "^0.1.2",
     "@capacitor/android": "^2.4.0",
     "@capacitor/core": "2.4.0",
     "@capacitor/ios": "^2.4.0",
