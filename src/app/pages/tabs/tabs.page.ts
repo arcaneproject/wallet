@@ -6,6 +6,7 @@ import { SettingsKey, StorageProvider } from '../../services/storage/storage'
 import { ExchangePage } from '../exchange/exchange'
 import { IntroductionPage } from '../introduction/introduction'
 import { PortfolioPage } from '../portfolio/portfolio'
+import { DashboardPage } from '../dashboard/dashboard'
 import { ScanPage } from '../scan/scan'
 import { SettingsPage } from '../settings/settings'
 
@@ -19,6 +20,7 @@ export class TabsPage {
   public tab2Root = ScanPage
   public tab3Root = ExchangePage
   public tab4Root = SettingsPage
+  public tab5Root = DashboardPage
 
   public isMobile = false
 
