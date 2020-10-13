@@ -119,6 +119,9 @@
   "wallet-edit-popover-component.delegate_label": "Delegieren",
   "wallet-edit-popover-component.undelegate_label": "Undelegieren",
   "add-account.title": "Währungen hinzufügen",
+
+  "dashboard.title": "Währungen hinzufügen",
+
   "add-sub-account.title": "{{ typeLabel }} hinzufügen",
   "add-sub-account.tokens_label": "Tokens",
   "add-sub-account.accounts_label": "Konto",

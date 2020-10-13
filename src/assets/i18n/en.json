@@ -269,6 +269,10 @@
   "add-account": {
     "title": "Add Coins"
   },
+  "dashboard": {
+    "title": "Welcome !"
+  },
+
   "add-sub-account": {
     "title": "Add {{ typeLabel }}",
     "delegation_heading": "In order to <span class=\"style__strong color__primary\">delegate</span> your XTZ, you have to import or create a new account first before you can delegate.",
