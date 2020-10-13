@@ -112,6 +112,7 @@
     "wallet-edit-popover-component.delegate_label": "代表",
     "wallet-edit-popover-component.undelegate_label": "取消代表",
     "add-account.title": "增加币",
+    "dashboard.title": "增加币",
     "add-sub-account.title": "添加 {{ typeLabel }}",
     "add-sub-account.tokens_label": "代币",
     "add-sub-account.accounts_label": "账号",
