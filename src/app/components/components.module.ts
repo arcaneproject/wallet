@@ -12,6 +12,7 @@ import { AddressRowComponent } from './address-row/address-row'
 import { AmountComponent } from './amount/amount.component'
 import { CardActionableComponent } from './card-actionable/card-actionable'
 import { ChartComponent } from './chart/chart.component'
+import { ChartDashboardComponent } from './chart-dashboard/chart-dashboard.component'
 import { CurrencyItemComponent } from './currency-item/currency-item'
 import { CurrencySymbolComponent } from './currency-symbol/currency-symbol'
 import { DelegateEditPopoverComponent } from './delegate-edit-popover/delegate-edit-popover.component'
@@ -39,6 +40,7 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
     PortfolioItemComponent,
     IdenticonComponent,
     ChartComponent,
+    ChartDashboardComponent,
     AddressRowComponent,
     FromToComponent,
     SwapComponent,
@@ -80,6 +82,7 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
   exports: [
     PortfolioItemComponent,
     ChartComponent,
+    ChartDashboardComponent,
     IdenticonComponent,
     AddressRowComponent,
     AmountComponent,

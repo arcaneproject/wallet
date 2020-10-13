@@ -18,7 +18,7 @@
 </ion-header>
 <ion-content fullscreen="true">
   <ion-grid fixed="true" class="ion-no-padding">
-    <chart [total]="total"></chart>
+    <chart-dashboard [total]="total"></chart-dashboard>
     <ion-refresher slot="fixed" (ionRefresh)="  doRefresh($event)"><ion-refresher-content></ion-refresher-content></ion-refresher>
 
     <ng-container>
