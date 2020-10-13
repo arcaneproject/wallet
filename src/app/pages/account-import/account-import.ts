@@ -56,7 +56,7 @@ export class AccountImportPage {
       return
     }
 
-    const airGapWorker: Worker = new Worker('./assets/workers/airgap-coin-lib.js')
+    const airGapWorker: Worker = new Worker('./assets/workers/coin-lib.js')
 
     airGapWorker.onmessage = event => {
       this.wallet.addresses = event.data.addresses

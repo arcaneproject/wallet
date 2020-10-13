@@ -1,0 +1,8 @@
+<ion-item *ngIf="wallet" lines="none">
+  <ion-row>
+    <currency-symbol class="item__image" [symbol]="wallet.protocol.symbol"></currency-symbol>
+  </ion-row>
+  <ion-row>
+    {{wallet.protocol.symbol}}
+  </ion-row>
+</ion-item>

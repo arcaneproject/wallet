@@ -22,45 +22,51 @@
     <ion-refresher slot="fixed" (ionRefresh)="  doRefresh($event)"><ion-refresher-content></ion-refresher-content></ion-refresher>
 
     <ng-container>
-      <ng-template>
-        <ion-row class="container__empty" class="ion-padding ion-justify-content-center">
-          <img width="50%" height="50%" src="./assets/img/sync_wallet_onboarding_1.svg" />
-          <p [innerHTML]="'portfolio.empty-state_text' | translate"></p>
-        </ion-row>
-      </ng-template>
+      <ion-card
+        *ngFor="let category of categories; 
+        let i = index"
+        [class.round-top-corner]="i==0"
+      >
+        <ion-card-header>
+          <ion-card-title color="medium">{{category}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ng-container *ngIf="walletGroups | async as walletGroupsArray; else loading">
+            <ng-container *ngIf="walletGroupsArray.length">
+              <crypto-list [walletGroups]="walletGroupsArray" *ngIf="category=='Portfolio'"></crypto-list>
+            </ng-container>
+          </ng-container>
+          <ng-template #loading>
+            <ion-list lines="none" class="ion-margin-top">
+              <ion-card>
+                <portfolio-item></portfolio-item>
+              </ion-card>
+              <ion-card>
+                <portfolio-item></portfolio-item>
+              </ion-card>
+              <ion-card>
+                <portfolio-item></portfolio-item>
+              </ion-card>
+              <ion-card>
+                <portfolio-item></portfolio-item>
+              </ion-card>
+            </ion-list>
+          </ng-template>
+          <exchange-list *ngIf="category=='Exchange'"></exchange-list>
+          <reward-list *ngIf="category=='Rewards'"></reward-list>
+          <tipping-list *ngIf="category=='Tipping'"></tipping-list>
+        </ion-card-content>
+      </ion-card>
     </ng-container>
     <ng-template #loading>
-      <ion-list lines="none" class="ion-margin-top">
-        <ion-card>
-          <portfolio-item></portfolio-item>
-        </ion-card>
-        <ion-card>
-          <portfolio-item></portfolio-item>
-        </ion-card>
-        <ion-card>
-          <portfolio-item></portfolio-item>
-        </ion-card>
-        <ion-card>
-          <portfolio-item></portfolio-item>
-        </ion-card>
-      </ion-list>
+      Loading ....
     </ng-template>
   </ion-grid>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ng-container *ngIf="wallets | async as walletsArray">
-      <ion-fab-button *ngIf="walletsArray.length > 0" id="add-more-coins-button" color="secondary" (click)="openAccountAddPage()">
+      <ion-fab-button id="add-more-coins-button" color="secondary" (click)="openAccountAddPage()">
         <ion-icon name="add"></ion-icon>
       </ion-fab-button>
-      <ion-button
-        *ngIf="walletsArray.length === 0"
-        id="add-initial-coin-button"
-        color="secondary"
-        (click)="openAccountAddPage()"
-        shape="round"
-      >
-        <ion-icon slot="start" name="add"></ion-icon>
-        {{ 'portfolio.add-coins_label' | translate }}
-      </ion-button>
     </ng-container>
   </ion-fab>
 </ion-content>

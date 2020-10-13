@@ -9,6 +9,7 @@
     stroke: #fff !important;
   }
 }
+
 .loading-content {
   color: white;
   font-weight: 300;
@@ -23,7 +24,7 @@
 .sc-ion-card-ios-h,
 .sc-ion-card-md-h {
   padding: 4px 0;
-  margin-bottom: 16px;
+  margin-bottom: 1px;
   margin-top: 0px;
   p {
     font-weight: inherit;
@@ -36,7 +37,7 @@
   margin: 0;
 }
 ion-card {
-  margin: 0 8px 16px;
+  margin: 0 8px 1px;
 }
 .container__empty {
   img {
@@ -47,12 +48,8 @@ ion-card {
 .content-ios ion-fab[bottom] {
   bottom: 10px;
 }
-.portfolio--hero {
-  background: url('/assets/img/portfolio-lines.svg') no-repeat;
-  height: 25vh;
-  background-position: bottom;
-  h1 {
-    margin-bottom: 48px;
-    font-weight: bold;
-  }
+
+.round-top-corner {
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
 }
