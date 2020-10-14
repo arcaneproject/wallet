@@ -1,13 +1,13 @@
 <ion-header class="ion-no-border">
   <ion-grid fixed="true" class="ion-no-padding">
     <ion-toolbar>
-      <ion-buttons slot="start">
+      <ion-buttons slot="start" (click)="openScanPage()">
         <ion-button color="secondary" shape="round">
           <ion-icon name="scan-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
 
-      <ion-title color="primary">{{ 'dashboard.title' | translate }}</ion-title>
+      <ion-title color="primary" class="ion-text-center">{{ 'dashboard.title' | translate }}</ion-title>
       <ion-buttons slot="end">
         <ion-button color="secondary" shape="round">
           <ion-icon name="person-circle-outline"></ion-icon>
@@ -23,6 +23,7 @@
 
     <ng-container>
       <ion-card
+        style="background-color: #373737;"
         *ngFor="let category of categories; 
         let i = index"
         [class.round-top-corner]="i==0"

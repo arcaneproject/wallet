@@ -113,6 +113,11 @@ export class DashboardPage {
     this.router.navigateByUrl('/account-add').catch(handleErrorSentry(ErrorCategory.NAVIGATION))
   }
 
+  public openScanPage() {
+    alert('testing')
+    this.router.navigateByUrl('/tabs/scan').catch(handleErrorSentry(ErrorCategory.NAVIGATION))
+  }
+
   public async doRefresh(event: any = null) {
     // XTZ: Refresh delegation status
     this.operationsProvider.refreshAllDelegationStatuses(this.walletsProvider.getWalletList())

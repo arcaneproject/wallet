@@ -37,7 +37,7 @@
   margin: 0;
 }
 ion-card {
-  margin: 0 8px 1px;
+  margin: 0px 0px 1px;
 }
 .container__empty {
   img {
@@ -50,6 +50,7 @@ ion-card {
 }
 
 .round-top-corner {
-  border-top-right-radius: 10%;
-  border-top-left-radius: 10%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: 80px;
 }
