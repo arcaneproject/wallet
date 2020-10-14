@@ -5,7 +5,6 @@ import { Observable, ReplaySubject } from 'rxjs'
 
 import { CryptoToFiatPipe } from '../../pipes/crypto-to-fiat/crypto-to-fiat.pipe'
 import { AccountProvider } from '../../services/account/account.provider'
-import { DataService, DataServiceKey } from '../../services/data/data.service'
 import { OperationsProvider } from '../../services/operations/operations'
 import { ErrorCategory, handleErrorSentry } from '../../services/sentry-error-handler/sentry-error-handler'
 
@@ -25,14 +24,15 @@ export class DashboardPage {
   public total: number = 0
   public changePercentage: number = 0
 
+  public categories: Array<string> = ['Portfolio', 'Exchange', 'Rewards', 'Tipping']
+
   public wallets: Observable<AirGapMarketWallet[]>
   public walletGroups: ReplaySubject<WalletGroup[]> = new ReplaySubject(1)
 
   constructor(
     private readonly router: Router,
     private readonly walletsProvider: AccountProvider,
-    private readonly operationsProvider: OperationsProvider,
-    private readonly dataService: DataService
+    private readonly operationsProvider: OperationsProvider
   ) {
     this.wallets = this.walletsProvider.wallets.asObservable()
 
@@ -107,19 +107,6 @@ export class DashboardPage {
 
   public ionViewDidEnter() {
     this.doRefresh().catch(handleErrorSentry())
-  }
-
-  public openDetail(mainWallet: AirGapMarketWallet, subWallet?: AirGapMarketWallet) {
-    const info = subWallet
-      ? {
-          mainWallet,
-          wallet: subWallet
-        }
-      : {
-          wallet: mainWallet
-        }
-    this.dataService.setData(DataServiceKey.WALLET, info)
-    this.router.navigateByUrl('/account-transaction-list/' + DataServiceKey.WALLET).catch(console.error)
   }
 
   public openAccountAddPage() {
