@@ -12,13 +12,21 @@ import { AddressRowComponent } from './address-row/address-row'
 import { AmountComponent } from './amount/amount.component'
 import { CardActionableComponent } from './card-actionable/card-actionable'
 import { ChartComponent } from './chart/chart.component'
+import { ChartDashboardComponent } from './chart-dashboard/chart-dashboard.component'
 import { CurrencyItemComponent } from './currency-item/currency-item'
 import { CurrencySymbolComponent } from './currency-symbol/currency-symbol'
+import { CryptoSymbolComponent } from './crypto-symbol/crypto-symbol'
 import { DelegateEditPopoverComponent } from './delegate-edit-popover/delegate-edit-popover.component'
 import { EmptyStateComponent } from './empty-state/empty-state'
 import { FromToComponent } from './from-to/from-to'
 import { IdenticonComponent } from './identicon/identicon'
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item'
+import { CryptoItemComponent } from './crypto-item/crypto-item'
+import { CategoryComponent } from './category/category'
+import { CryptoListComponent } from './crypto-list/crypto-list'
+import { ExchangeListComponent } from './exchange-list/exchange-list'
+import { RewardListComponent } from './reward-list/reward-list'
+import { TippingListComponent } from './tipping-list/tipping-list'
 import { QrClipboardComponent } from './qr-clipboard/qr-clipboard'
 import { SignedTransactionComponent } from './signed-transaction/signed-transaction'
 import { SwapComponent } from './swap/swap'
@@ -37,8 +45,15 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
 @NgModule({
   declarations: [
     PortfolioItemComponent,
+    CryptoItemComponent,
+    CategoryComponent,
+    CryptoListComponent,
+    ExchangeListComponent,
+    RewardListComponent,
+    TippingListComponent,
     IdenticonComponent,
     ChartComponent,
+    ChartDashboardComponent,
     AddressRowComponent,
     FromToComponent,
     SwapComponent,
@@ -47,6 +62,7 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
     CardActionableComponent,
     EmptyStateComponent,
     CurrencySymbolComponent,
+    CryptoSymbolComponent,
     QrClipboardComponent,
     SignedTransactionComponent,
     TezosDelegationCard,
@@ -79,7 +95,14 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
   ],
   exports: [
     PortfolioItemComponent,
+    CryptoItemComponent,
+    CategoryComponent,
+    CryptoListComponent,
+    ExchangeListComponent,
+    RewardListComponent,
+    TippingListComponent,
     ChartComponent,
+    ChartDashboardComponent,
     IdenticonComponent,
     AddressRowComponent,
     AmountComponent,
@@ -89,6 +112,7 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
     CardActionableComponent,
     EmptyStateComponent,
     CurrencySymbolComponent,
+    CryptoSymbolComponent,
     QrClipboardComponent,
     SignedTransactionComponent,
     TezosDelegationCard,

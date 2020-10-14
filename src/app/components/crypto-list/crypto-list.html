@@ -1,0 +1,19 @@
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-no-padding" lines="none" *ngFor="let walletGroup of walletGroups">
+      <crypto-item
+        *ngIf="walletGroup.mainWallet"
+        class="mainWallet"
+        [wallet]="walletGroup.mainWallet"
+        tappable
+        (click)="openDetail(walletGroup.mainWallet)"
+      ></crypto-item>
+      <crypto-item
+        *ngFor="let subWallet of walletGroup.subWallets"
+        [wallet]="subWallet"
+        tappable
+        (click)="openDetail(walletGroup.mainWallet, subWallet)"
+      ></crypto-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
