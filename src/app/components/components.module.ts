@@ -15,6 +15,7 @@ import { ChartComponent } from './chart/chart.component'
 import { ChartDashboardComponent } from './chart-dashboard/chart-dashboard.component'
 import { CurrencyItemComponent } from './currency-item/currency-item'
 import { CurrencySymbolComponent } from './currency-symbol/currency-symbol'
+import { CryptoSymbolComponent } from './crypto-symbol/crypto-symbol'
 import { DelegateEditPopoverComponent } from './delegate-edit-popover/delegate-edit-popover.component'
 import { EmptyStateComponent } from './empty-state/empty-state'
 import { FromToComponent } from './from-to/from-to'
@@ -61,6 +62,7 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
     CardActionableComponent,
     EmptyStateComponent,
     CurrencySymbolComponent,
+    CryptoSymbolComponent,
     QrClipboardComponent,
     SignedTransactionComponent,
     TezosDelegationCard,
@@ -110,6 +112,7 @@ import { DelegateActionPopoverComponent } from './delegate-action-popover copy/d
     CardActionableComponent,
     EmptyStateComponent,
     CurrencySymbolComponent,
+    CryptoSymbolComponent,
     QrClipboardComponent,
     SignedTransactionComponent,
     TezosDelegationCard,
